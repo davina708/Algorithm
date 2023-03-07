@@ -1,9 +1,17 @@
+// function solution(n) {
+//     let arr=[];
+//     for(let i=1;i<=n;i++){
+//         if(i%2!==0){
+//         arr.push(i)
+//         }
+//     }
+//     return arr;
+// }
+
 function solution(n) {
-    let arr=[];
-    for(let i=1;i<=n;i++){
-        if(i%2!==0){
+     let arr=[];
+    for(let i=1;i<=n;i+=2){
         arr.push(i)
-        }
     }
     return arr;
 }
