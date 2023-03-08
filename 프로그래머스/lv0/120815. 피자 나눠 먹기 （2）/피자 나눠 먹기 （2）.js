@@ -1,20 +1,14 @@
 function solution(n) {
-    // let a=n;
-    // let b=6;
-    // while(a%b!==0){
-    //     let r=a%b;
-    //     if(r!==0){
-    //         a=b;
-    //         b=r; 
-    //     }
-    // }
-    // let lcm=(n*6)/b;
-    // return lcm/6;
-    let k=6;
-    while(k%n!==0){
-        k=k+6;
+    let flag=true;
+    let k=1;
+    while(flag){
+        if(6*k%n===0){
+            flag=false;
+            return k;
+        } else {
+            k++;
+        }
     }
-    return k/6;
 }
 //n*k===6*k가 되는 순간 까지 k증가
 //n과 6의 최소공배수
