@@ -30,10 +30,7 @@ function solution(letter) {
     let newLetter=letter.split(" ");
     let res="";
     for(let i=0;i<newLetter.length;i++){
-        for(let keys in morse)
-        if(newLetter[i]===keys){
-            res=res+morse[keys];
-        }
+        res=res+morse[newLetter[i]];
     }
     return res;
 }
