@@ -7,5 +7,9 @@ function solution(balls, share) {
         return base;
     }
     
+    if (balls === 1) {
+        return 1
+    }
+    
     return Math.round(factorial(balls)/(factorial(balls-share)*factorial(share)));
 }
